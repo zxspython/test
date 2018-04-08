@@ -1,4 +1,5 @@
 <ol>
-    <li><a href="localhost:3000/files/{{title[0].id}}">{{title[0]}}<a></li>
+    <li><a href="{{ url_for('file', file_id=title[0].id) }}">{{title[0]}}</a></li>
+    <li><a href="http://localhost:3000/files/{{ title[0].id }}">{{ title[0] }}</a></li>
     <li>{{title[1]}}</li>
 </ol>
