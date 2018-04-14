@@ -1,0 +1,5 @@
+<ol>
+    {% for i in File_All %}
+    <li><a href="{{ url_for('file', file_id=i.id) }}">{{ i }}</a>{{i.tags}}</li>
+    {% endfor %}
+</ol>
